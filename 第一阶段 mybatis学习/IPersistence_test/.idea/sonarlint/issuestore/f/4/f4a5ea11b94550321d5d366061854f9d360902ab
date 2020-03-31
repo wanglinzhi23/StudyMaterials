@@ -1,0 +1,9 @@
+
+esquid:S00112D"FDefine and throw a dedicated exception instead of using a generic one.(Ü­ö’8Åà‚„“.
+jsquid:S001129"FDefine and throw a dedicated exception instead of using a generic one.(×”ÿùÿÿÿÿ8Åà‚„“.
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ãûöğ
+tsquid:S1192"QDefine a constant instead of duplicating this literal "sqlMapConfig.xml" 4 times.(ÖñÜÉüÿÿÿÿ8Åà‚„“.
+jsquid:S00112-"FDefine and throw a dedicated exception instead of using a generic one.(ö¡Ñ«ùÿÿÿÿ8¸œÕƒ“.
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÒŸ§²
+T
+squid:S106'"9Replace this use of System.out or System.err by a logger.(õš‡àúÿÿÿÿ
