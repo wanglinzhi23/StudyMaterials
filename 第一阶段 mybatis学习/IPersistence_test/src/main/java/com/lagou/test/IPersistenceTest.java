@@ -61,7 +61,7 @@ public class IPersistenceTest {
 		IUserDao userDao = sqlSession.getMapper(IUserDao.class);
 		User user = new User();
 		user.setId(1);
-		userDao.remove(user);
+		userDao.delete(user);
 	}
 
 	@Test

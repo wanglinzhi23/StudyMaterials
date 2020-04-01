@@ -23,7 +23,7 @@
         update user set username=#{username} where id = #{id}
     </update>
 
-    <delete id="" paramterType="com.lagou.pojo.User">
+    <delete id="delete" paramterType="com.lagou.pojo.User">
         delete from user where id =#{id}
     </delete>
 
