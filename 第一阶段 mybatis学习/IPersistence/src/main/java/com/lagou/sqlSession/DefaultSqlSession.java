@@ -37,7 +37,14 @@ public class DefaultSqlSession implements SqlSession {
 
     }
 
-    @Override
+	@Override
+	public void excute(String statementid, Object... params) throws Exception {
+		simpleExecutor simpleExecutor = new simpleExecutor();
+		MappedStatement mappedStatement = configuration.getMappedStatementMap().get(statementid);
+		simpleExecutor.execute(configuration, mappedStatement,params);
+	}
+
+	@Override
     public <T> T getMapper(Class<?> mapperClass) {
         // 使用JDK动态代理来为Dao接口生成代理对象，并返回
 
@@ -51,6 +58,10 @@ public class DefaultSqlSession implements SqlSession {
                 String className = method.getDeclaringClass().getName();
 
                 String statementId = className+"."+methodName;
+	            if(method.getReturnType().getName().equals("void")){
+                    excute(statementId,args);
+                    return true;
+	            }
 
                 // 准备参数2：params:args
                 // 获取被调用方法的返回值类型
