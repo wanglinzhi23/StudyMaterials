@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lagou-transfer-transaction:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="lagou-transfer-transaction-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="lagou-transfer-transaction:war exploded" />
+    </root>
+  </artifact>
+</component>
